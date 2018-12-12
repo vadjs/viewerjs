@@ -188,8 +188,8 @@ export default {
       const initialImageData = assign({}, imageData);
 
       if (options.rotatable) {
-        imageData.rotate = oldImageData.rotate || 0;
-        initialImageData.rotate = 0;
+        imageData.rotate = oldImageData.rotate || options.rotate || 0;
+        initialImageData.rotate = options.rotate || 0;
       }
 
       if (options.scalable) {

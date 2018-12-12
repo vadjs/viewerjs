@@ -56,6 +56,7 @@ declare namespace Viewer {
     navbar?: boolean | Visibility;
     ready?(event: CustomEvent): void;
     rotatable?: boolean;
+    rotate?: number;
     scalable?: boolean;
     show?(event: CustomEvent): void;
     shown?(event: CustomEvent): void;
